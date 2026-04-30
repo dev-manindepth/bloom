@@ -1,0 +1,12 @@
+node_modules/
+.claude/
+dist/
+build/
+.turbo/
+coverage/
+pnpm-lock.yaml
+*.min.js
+*.min.css
+
+# Generated token artifacts (Style Dictionary output)
+packages/*/dist/
