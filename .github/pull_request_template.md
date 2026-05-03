@@ -46,7 +46,7 @@ build tooling, docs typo).
 For a NEW component, attach all of:
 - Web (Chrome or Safari) — at least the default state, plus any new variants
 - React Native — iOS simulator OR Android emulator (whichever the change targets;
-  both if the change is cross-cutting)
+  both if the change affects both platforms)
 
 For a BUG FIX, attach a "before" and an "after" screenshot for each affected platform.
 -->

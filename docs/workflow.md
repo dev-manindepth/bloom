@@ -1,6 +1,6 @@
 # Workflow
 
-How design and engineering collaborate on Bloom. New contributors should read this first.
+How designers and engineers collaborate on Bloom. New contributors should read this first.
 
 ## Sources of truth
 
@@ -60,7 +60,11 @@ If at any point a Workflow B PR turns out to need a design decision, convert it:
 
 ## When does a change need an RFC?
 
-An RFC is needed when the decision is **strategic and cross-cutting** — when it affects more than one package, sets a precedent, or has reasonable alternatives worth recording.
+An RFC is needed when any of these apply:
+
+- The decision affects more than one package.
+- It will become a pattern that future components or packages copy.
+- There's more than one reasonable way to do it, and we want a written record of why we chose this one.
 
 Examples that require an RFC:
 

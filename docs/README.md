@@ -2,20 +2,25 @@
 
 Every package and component in Bloom has a written spec. **If a non-trivial change ships without an updated spec, that's a bug.**
 
-New here? Start with [`workflow.md`](./workflow.md) — how design and engineering collaborate on Bloom.
+New here? Start with [`workflow.md`](./workflow.md) — how designers and engineers collaborate on Bloom.
 
 ## Layout
 
 ```
 docs/
-├── README.md             ← you are here
-├── workflow.md           ← how we work
-├── templates/            ← copy these to start a new doc
+├── README.md
+├── workflow.md
+├── templates/
 │   ├── rfc.md
 │   └── spec.mdx
-├── rfcs/                 ← cross-cutting "should we do this?" decisions
-└── specs/                ← one .mdx per package or component
+├── rfcs/
+└── specs/
 ```
+
+- `workflow.md` — how designers and engineers collaborate on Bloom.
+- `templates/` — copy from here to start a new RFC or spec.
+- `rfcs/` — decisions that affect more than one package or establish a pattern others will follow.
+- `specs/` — one MDX per package or component, covering API, behavior, and design decisions.
 
 ## The two document types
 
@@ -30,19 +35,23 @@ docs/
 
 ### When does something need an RFC?
 
-Write an RFC when the decision is **strategic and cross-cutting** — it affects more than one package, sets a precedent, or has reasonable alternatives worth recording.
+Write an RFC when any of these apply:
 
-Examples:
+- The decision affects more than one package.
+- It will become a pattern that future components or packages copy.
+- There's more than one reasonable way to do it, and we want a written record of why we chose this one.
+
+Examples that need an RFC:
 
 - "Should we adopt the DTCG token spec?"
 - "Should our build emit ESM only, or ESM + CJS?"
 - "How do we handle theming on React Native?"
 
-We **don't** need an RFC for:
+Examples that don't:
 
-- Adding a single component (the spec covers it)
-- Bug fixes
-- Refactors with no public API change
+- Adding a single component (the spec covers it).
+- Bug fixes.
+- Refactors with no public API change.
 
 ### What goes in a Spec?
 
